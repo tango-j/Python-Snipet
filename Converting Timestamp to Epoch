@@ -1,0 +1,4 @@
+from datetime import datetime
+
+UTC_time = datetime.strptime('Sat, 03 Apr 2021 14:30:12 GMT', "%a, %d %b %Y %H:%M:%S %Z")
+epoch = (UTC_time - datetime(1970,1,1)).total_seconds()
